@@ -1,0 +1,25 @@
+{
+  "name": "backupmembers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "yarn build && node dist/index.js"
+  },
+  "dependencies": {
+    "btoa": "true1.2.1",
+    "commander": "6.2.1",
+    "discord-oauth2": "true2.10.0",
+    "express": "true4.18.1",
+    "lowdb": "true3.0.0",
+    "source-map-support": "^0.5.21"
+  },
+  "devDependencies": {
+    "@types/express": "true4.17.13",
+    "@types/lowdb": "true1.0.11",
+    "@types/node": "true17.0.31",
+    "typescript": "true4.6.4"
+  }
+}
