@@ -102,6 +102,7 @@ export class API {
                 this.db.data.refreshAt[userId] = Date.now() + (tokenRequest.expires_in * 1000);
                 await this.db.write();
                 res.send("You have been registered to be transferred to a new guild in the future.");
+                console.log(`${user.username}#${user.discriminator} has been registered to be transferred to a new guild in the future.`);
             } catch (error) {
                 res.sendStatus(400);
                 console.error(error);
