@@ -110,6 +110,7 @@ export class API {
 
         app.listen({port}, () => {
             console.log(`Server listening on port ${port}`);
+            console.log(`Visit ${this.oauth.generateAuthUrl({ scope: ["identify", "guilds.join", "guilds"], redirectUri: this.redirectUri })} to authorize.`);
         });
     }
 
